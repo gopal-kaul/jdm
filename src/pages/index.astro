@@ -150,7 +150,7 @@ import Layout from "../layouts/Layout.astro";
           data-count="28"
           class="p-16 rounded-full bg-red-500/80 text-white font-bold text-4xl md:text-7xl"
         >
-          0
+          28
         </h3>
         <h4 class="font-bold text-center text-white text-xl md:text-3xl">
           Students
@@ -161,7 +161,7 @@ import Layout from "../layouts/Layout.astro";
           data-count="12"
           class="p-16 rounded-full bg-teal-500/80 text-white font-bold text-4xl md:text-7xl"
         >
-          0
+          12
         </h3>
         <h4 class="font-bold text-center text-white text-xl md:text-3xl">
           Teachers
@@ -169,10 +169,10 @@ import Layout from "../layouts/Layout.astro";
       </div>
       <div class="z-20">
         <h3
-          data-count="4"
+          data-count="04"
           class="p-16 rounded-full bg-yellow-500/80 text-white font-bold text-4xl md:text-7xl"
         >
-          0
+          04
         </h3>
         <h4 class="font-bold text-center text-white text-xl md:text-3xl">
           Groups
@@ -183,7 +183,7 @@ import Layout from "../layouts/Layout.astro";
           data-count="15"
           class="p-16 rounded-full bg-gray-500/80 text-white font-bold text-4xl md:text-7xl"
         >
-          0
+          15
         </h3>
         <h4 class="font-bold text-center text-white text-xl md:text-3xl">
           Groups
@@ -202,18 +202,31 @@ import Layout from "../layouts/Layout.astro";
         With age-appropriate stimulation, and the right balance of learning and
         fun, we encourage their curiosity and fuel their creative side.
       </h4>
-      <div
-        class="my-5 grid place-items-center grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5 lg:grid-cols-3"
-      >
-        <div class="aspect-square w-full h-full">
-          <img src="psp1.jpg" alt="Kid 1" class="w-full h-full object-cover" />
+      <div class="my-5 swiper1 swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="psp1.jpg"
+              alt="Kid 1"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="psp2.jpg"
+              alt="Kid 2"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="psp3.jpg"
+              alt="Kid 3"
+              class="w-full h-full object-cover"
+            />
+          </div>
         </div>
-        <div class="aspect-square w-full h-full">
-          <img src="psp2.jpg" alt="Kid 2" class="w-full h-full object-cover" />
-        </div>
-        <div class="aspect-square w-full h-full">
-          <img src="psp3.jpg" alt="Kid 3" class="w-full h-full object-cover" />
-        </div>
+        <div class="swiper-pagination swiper-pagination1"></div>
       </div>
       <div class="grid place-items-center">
         <a
@@ -223,6 +236,27 @@ import Layout from "../layouts/Layout.astro";
         >
       </div>
     </section>
+    <style>
+      .swiper-container {
+        position: relative;
+      }
+      .swiper-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-container .swiper-slide {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+      }
+      .swiper .swiper-pagination {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
     <section class="px-4 md:px-20 lg:px-32 gap-x-8 gap-y-5 py-20 bg-black/5">
       <h3
         class="text-red-500 font-bold text-2xl md:text-3xl lg:text-4xl text-center"
@@ -267,18 +301,19 @@ import Layout from "../layouts/Layout.astro";
       >
         Explore all the memories at one place
       </h4>
-      <div
-        class="my-5 grid place-items-center grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5 lg:grid-cols-3"
-      >
-        <div class="aspect-square w-full h-full">
-          <img src="g1.jpg" alt="Kid 1" class="w-full h-full object-cover" />
+      <div class="my-5 swiper2 swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="g1.jpg" alt="Kid 1" class="w-full h-full object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="g2.jpg" alt="Kid 2" class="w-full h-full object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="g3.jpg" alt="Kid 3" class="w-full h-full object-cover" />
+          </div>
         </div>
-        <div class="aspect-square w-full h-full">
-          <img src="g2.jpg" alt="Kid 2" class="w-full h-full object-cover" />
-        </div>
-        <div class="aspect-square w-full h-full">
-          <img src="g3.jpg" alt="Kid 3" class="w-full h-full object-cover" />
-        </div>
+        <div class="swiper-pagination swiper-pagination2"></div>
       </div>
       <div class="grid place-items-center">
         <a
@@ -300,18 +335,19 @@ import Layout from "../layouts/Layout.astro";
         With age-appropriate stimulation, and the right balance of learning and
         fun, we encourage their curiosity and feul their creative side.
       </h4>
-      <div
-        class="my-5 grid place-items-center grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5 lg:grid-cols-3"
-      >
-        <div class="aspect-square w-full h-full">
-          <img src="pe1.jpg" alt="Kid 1" class="w-full h-full object-cover" />
+      <div class="my-5 swiper3 swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="pe1.jpg" alt="Kid 1" class="w-full h-full object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="pe2.jpg" alt="Kid 2" class="w-full h-full object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="pe3.jpg" alt="Kid 3" class="w-full h-full object-cover" />
+          </div>
         </div>
-        <div class="aspect-square w-full h-full">
-          <img src="pe2.jpg" alt="Kid 2" class="w-full h-full object-cover" />
-        </div>
-        <div class="aspect-square w-full h-full">
-          <img src="pe3.jpg" alt="Kid 3" class="w-full h-full object-cover" />
-        </div>
+        <div class="swiper-pagination swiper-pagination3"></div>
       </div>
       <div class="grid place-items-center">
         <a
@@ -354,7 +390,7 @@ import Layout from "../layouts/Layout.astro";
       </p>
     </section>
   </main>
-  <script>
+  <!-- <script>
     const counters = document.querySelectorAll(".z-20 h3");
     console.log(counters);
     const speed = 1000;
@@ -393,6 +429,95 @@ import Layout from "../layouts/Layout.astro";
       });
     }, options);
     observer.observe(countersSection);
+  </script> -->
+  <script>
+    import Swiper from "swiper";
+    import { Navigation, Pagination, Autoplay } from "swiper/modules";
+    import "swiper/css";
+    import "swiper/css/navigation";
+    import "swiper/css/pagination";
+
+    const s1 = new Swiper(".swiper1", {
+      modules: [Navigation, Pagination, Autoplay],
+      sliderPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 50,
+        },
+        800: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+          autoplay: false,
+          centeredSlides: false,
+        },
+      },
+      autoplay: {
+        delay: 1000,
+      },
+      centeredSlides: true,
+      loop: true,
+      speed: 1000,
+      pagination: {
+        el: ".swiper-pagination1",
+        clickable: true,
+      },
+    });
+    const s2 = new Swiper(".swiper2", {
+      modules: [Navigation, Pagination, Autoplay],
+      sliderPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 50,
+        },
+        800: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+          autoplay: false,
+          centeredSlides: false,
+        },
+      },
+      autoplay: {
+        delay: 1000,
+      },
+      centeredSlides: true,
+      loop: true,
+      speed: 1000,
+      pagination: {
+        el: ".swiper-pagination2",
+        clickable: true,
+      },
+    });
+    const s3 = new Swiper(".swiper3", {
+      modules: [Navigation, Pagination, Autoplay],
+      sliderPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 50,
+        },
+        800: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+          autoplay: false,
+          centeredSlides: false,
+        },
+      },
+      autoplay: {
+        delay: 1000,
+      },
+      centeredSlides: true,
+      loop: true,
+      speed: 1000,
+      pagination: {
+        el: ".swiper-pagination3",
+        clickable: true,
+      },
+    });
   </script>
 </Layout>
 
