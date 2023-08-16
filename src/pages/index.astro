@@ -325,77 +325,75 @@ import Layout from "../layouts/Layout.astro";
       class="px-4 md:px-20 lg:px-32 gap-x-8 gap-y-5 py-20 bg-teal-100/20"
     >
       <h3
-        class="text-red-500 font-bold text-2xl md:text-3xl lg:text-4xl max-md:text-center uppercase"
+        class="text-red-500 font-bold text-2xl md:text-3xl lg:text-4xl text-center uppercase"
       >
         Our Director
       </h3>
       <h4
-        class="text-black/60 font-semibold text-lg md:text-2xl max-md:text-center py-5"
+        class="text-black/60 font-semibold text-lg md:text-2xl text-center py-5"
       >
         Some good words of director
       </h4>
-      <div class="flex flex-col mt-5 gap-x-10 gap-y-5 md:flex-row items-center">
-        <div class="md:w-1/2 space-y-5">
-          <p class="text-black/50 text-lg text-justify md:text-2xl">
-            "Education is not something which a teacher does, but that its
-            natural process which develops spontaneously in the kids” having
-            said that over the years I have worked with early childhood
-            education and have been a part of Montessori environment for more
-            than 7 years. I have realised that working with kids is something
-            that I love and have numerous ideas to make this beginning a happy
-            one for the kids as well for the parents."
-            <br /><br />
-            -Parul Agarwal
-          </p>
-        </div>
+      <div class="grid place-items-center">
         <img
-          src="/director.jpg"
+          src="/director.png"
           alt="Director"
-          class="w-full md:w-1/2 h-72 object-cover"
+          class="h-72 rounded-full object-cover"
         />
       </div>
+      <p class="text-black/50 pt-4 text-lg text-center md:text-2xl">
+        "Education is not something which a teacher does, but that its natural
+        process which develops spontaneously in the kids” having said that over
+        the years I have worked with early childhood education and have been a
+        part of Montessori environment for more than 7 years. I have realised
+        that working with kids is something that I love and have numerous ideas
+        to make this beginning a happy one for the kids as well for the
+        parents."
+        <br /><br />
+        <span class="font-semibold">-Parul Agarwal</span>
+      </p>
     </section>
-    <script>
-      const counters = document.querySelectorAll(".z-20 h3");
-      console.log(counters);
-      const speed = 1000;
-      const countersSection = document.querySelector("#countersSection");
-      console.log("Counters Section");
-      console.log(countersSection);
-      const options = {
-        root: null,
-        threshold: 0,
-        rootMargin: "0px 0px -50px 0px",
-      };
-      const observer = new IntersectionObserver(function (entries, observer) {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            counters.forEach((counter) => {
-              const animate = () => {
-                const value = +counter.getAttribute("data-count");
-                const data = +counter.innerText;
-
-                const time = value / speed;
-
-                if (data < value) {
-                  counter.innerText = Math.ceil(data + time);
-                  setTimeout(animate, 1);
-                } else {
-                  counter.innerText = value;
-                }
-              };
-              animate();
-            });
-          } else {
-            counters.forEach((counter) => {
-              counter.innerText = 0;
-            });
-          }
-        });
-      }, options);
-      observer.observe(countersSection);
-    </script>
   </main>
+  <script>
+    const counters = document.querySelectorAll(".z-20 h3");
+    console.log(counters);
+    const speed = 1000;
+    const countersSection = document.querySelector("#countersSection");
+    console.log("Counters Section");
+    console.log(countersSection);
+    const options = {
+      root: null,
+      threshold: 0,
+      rootMargin: "0px 0px -50px 0px",
+    };
+    const observer = new IntersectionObserver(function (entries, observer) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          counters.forEach((counter) => {
+            const animate = () => {
+              const value = +counter.getAttribute("data-count");
+              const data = +counter.innerText;
 
-  <style></style>
+              const time = value / speed;
+
+              if (data < value) {
+                counter.innerText = Math.ceil(data + time);
+                setTimeout(animate, 1);
+              } else {
+                counter.innerText = value;
+              }
+            };
+            animate();
+          });
+        } else {
+          counters.forEach((counter) => {
+            counter.innerText = 0;
+          });
+        }
+      });
+    }, options);
+    observer.observe(countersSection);
+  </script>
 </Layout>
+
+<style></style>
