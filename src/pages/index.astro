@@ -83,7 +83,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </section>
     <section
-      class="px-4 md:px-20 lg:px-32 flex flex-col items-center md:flex-row-reverse gap-x-8 gap-y-5 py-10"
+      class="px-4 md:px-20 lg:px-32 flex flex-col items-center md:flex-row-reverse gap-x-8 gap-y-5 py-10 md:py-20"
     >
       <div class="md:w-1/2 space-y-5">
         <h3 class="text-red-500 font-medium">
@@ -112,6 +112,81 @@ import Layout from "../layouts/Layout.astro";
         class="w-full md:w-1/2 h-72 object-cover"
       />
     </section>
+    <section
+      id="countersSection"
+      class="relative animate-numbers px-4 md:px-20 bg-black lg:px-32 py-40 grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-4 gap-y-4"
+    >
+      <img
+        src="/kidsss.jpg"
+        alt="Kids playing"
+        class="absolute top-0 left-0 object-cover opacity-40 w-full h-full z-10"
+      />
+      <div class="z-20">
+        <h3
+          data-count="28"
+          class="p-16 rounded-full bg-red-500/80 text-white font-bold"
+        >
+          0
+        </h3>
+        <h4 class="font-bold text-center text-white">Students</h4>
+      </div>
+      <div class="z-20">
+        <h3
+          data-count="12"
+          class="p-16 rounded-full bg-teal-500/80 text-white font-bold"
+        >
+          0
+        </h3>
+        <h4 class="font-bold text-center text-white">Teachers</h4>
+      </div>
+      <div class="z-20">
+        <h3
+          data-count="4"
+          class="p-16 rounded-full bg-yellow-500/80 text-white font-bold"
+        >
+          0
+        </h3>
+        <h4 class="font-bold text-center text-white">Groups</h4>
+      </div>
+      <div class="z-20">
+        <h3
+          data-count="15"
+          class="p-16 rounded-full bg-gray-500/80 text-white font-bold"
+        >
+          0
+        </h3>
+        <h4 class="font-bold text-center text-white">Groups</h4>
+      </div>
+    </section>
+    <section class="px-4 py-20 md:px-20 lg:px-32">
+      <h3 class="text-red-500 font-bold text-xl text-center">
+        Our Pre-School Programs
+      </h3>
+      <h4 class="font-medium text-black/50 text-center">
+        With age-appropriate stimulation, and the right balance of learning and
+        fun, we encourage their curiosity and fuel their creative side.
+      </h4>
+      <div
+        class="my-5 grid place-items-center grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5 lg:grid-cols-3"
+      >
+        <div class="aspect-square w-full h-full">
+          <img src="psp1.jpg" alt="Kid 1" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square w-full h-full">
+          <img src="psp2.jpg" alt="Kid 2" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square w-full h-full">
+          <img src="psp3.jpg" alt="Kid 3" class="w-full h-full object-cover" />
+        </div>
+      </div>
+      <div class="grid place-items-center">
+        <a
+          href="#"
+          class="bg-red-500 px-6 py-2 rounded-full text-white font-bold"
+          >Our Programs</a
+        >
+      </div>
+    </section>
     <section class="px-4 md:px-20 lg:px-32 gap-x-8 gap-y-5 py-10 bg-black/5">
       <h3 class="text-red-500 font-bold text-3xl">Why choose Us?</h3>
       <h4 class="text-black/60 font-semibold text-2xl py-4">
@@ -137,6 +212,61 @@ import Layout from "../layouts/Layout.astro";
           alt="Why do we?"
           class="w-full md:w-1/2 h-80 object-cover"
         />
+      </div>
+    </section>
+    <section class="px-4 py-20 md:px-20 lg:px-32">
+      <h3 class="text-red-500 font-bold text-xl text-center">Our Gallery</h3>
+      <h4 class="font-medium text-black/50 text-center">
+        Explore all the memories at one place
+      </h4>
+      <div
+        class="my-5 grid place-items-center grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5 lg:grid-cols-3"
+      >
+        <div class="aspect-square w-full h-full">
+          <img src="g1.jpg" alt="Kid 1" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square w-full h-full">
+          <img src="g2.jpg" alt="Kid 2" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square w-full h-full">
+          <img src="g3.jpg" alt="Kid 3" class="w-full h-full object-cover" />
+        </div>
+      </div>
+      <div class="grid place-items-center">
+        <a
+          href="#"
+          class="bg-red-500 px-6 py-2 rounded-full text-white font-bold"
+          >View More</a
+        >
+      </div>
+    </section>
+    <section class="px-4 py-20 bg-preschool bg-cover md:px-20 lg:px-32">
+      <h3 class="text-red-500 font-bold text-xl text-center">
+        Our Pre-School Events
+      </h3>
+      <h4 class="font-medium text-black/50 text-center">
+        With age-appropriate stimulation, and the right balance of learning and
+        fun, we encourage their curiosity and feul their creative side.
+      </h4>
+      <div
+        class="my-5 grid place-items-center grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5 lg:grid-cols-3"
+      >
+        <div class="aspect-square w-full h-full">
+          <img src="pe1.jpg" alt="Kid 1" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square w-full h-full">
+          <img src="pe2.jpg" alt="Kid 2" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square w-full h-full">
+          <img src="pe3.jpg" alt="Kid 3" class="w-full h-full object-cover" />
+        </div>
+      </div>
+      <div class="grid place-items-center">
+        <a
+          href="#"
+          class="bg-red-500 px-6 py-2 rounded-full text-white font-bold"
+          >View More</a
+        >
       </div>
     </section>
     <section
@@ -167,6 +297,46 @@ import Layout from "../layouts/Layout.astro";
         />
       </div>
     </section>
+    <script>
+      const counters = document.querySelectorAll(".z-20 h3");
+      console.log(counters);
+      const speed = 1000;
+      const countersSection = document.querySelector("#countersSection");
+      console.log("Counters Section");
+      console.log(countersSection);
+      const options = {
+        root: null,
+        threshold: 0,
+        rootMargin: "0px 0px -50px 0px",
+      };
+      const observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            counters.forEach((counter) => {
+              const animate = () => {
+                const value = +counter.getAttribute("data-count");
+                const data = +counter.innerText;
+
+                const time = value / speed;
+
+                if (data < value) {
+                  counter.innerText = Math.ceil(data + time);
+                  setTimeout(animate, 1);
+                } else {
+                  counter.innerText = value;
+                }
+              };
+              animate();
+            });
+          } else {
+            counters.forEach((counter) => {
+              counter.innerText = 0;
+            });
+          }
+        });
+      }, options);
+      observer.observe(countersSection);
+    </script>
   </main>
 </Layout>
 
