@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contact Us | Joining Dots Montessori">
+  <main>
+    <section
+      class="bg-hero bg-cover w-full h-full object-cover py-[15%] grid place-items-center"
+    >
+      <div class="text-center text-white space-y-4">
+        <h1 class="text-3xl md:text-5xl lg:text-7xl font-extrabold uppercase">
+          Reach Us
+        </h1>
+      </div>
+    </section>
+    <div class="px-4 md:px-20 lg:px-32 py-10 md:py-[5%]">
+      <form
+        class="px-4 md:px-20 text-lg md:text-xl bg-teal-100/30 backdrop-blur-lg gap-x-10 gap-y-10 lg:px-32 py-10 md:py-[5%] grid grid-cols-1 md:grid-cols-2"
+      >
+        <div class="flex flex-col gap-y-2">
+          <label for="" class="">First Name</label>
+          <input
+            type="text"
+            name="firstname"
+            class="py-2 px-4 rounded-xl md:w-3/4 shadow-md"
+          />
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <label for="" class="">Last Name</label>
+          <input
+            type="text"
+            name="lastname"
+            class="py-2 px-4 rounded-xl md:w-3/4 shadow-md"
+          />
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <label for="" class="">Email</label>
+          <input
+            type="email"
+            name="email"
+            class="py-2 px-4 rounded-xl md:w-3/4 shadow-md"
+          />
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <label for="" class="">Phone</label>
+          <input
+            type="text"
+            name="phone"
+            class="py-2 px-4 rounded-xl md:w-3/4 shadow-md"
+          />
+        </div>
+        <div class="md:col-span-2 flex flex-col gap-y-2">
+          <label for="" class="">Message</label>
+          <textarea
+            name="message"
+            id=""
+            cols="20"
+            rows="10"
+            class="px-4 py-2 rounded-xl shadow-md"></textarea>
+        </div>
+        <div class="md:col-span-2 flex justify-end">
+          <button
+            type="submit"
+            class="bg-red-600 px-20 uppercase py-3 text-white font-bold rounded-xl shadow-md"
+            >Send</button
+          >
+        </div>
+      </form>
+    </div>
+  </main>
+</Layout>
