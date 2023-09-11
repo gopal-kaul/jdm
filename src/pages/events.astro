@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import EventsComponent from "../components/Events";
+---
+
+<Layout title="Events | Joining Dots Montessori">
+  <main>
+    <section
+      class="bg-hero bg-cover w-full h-full object-cover py-[15%] grid place-items-center"
+    >
+      <div class="text-center text-white space-y-4">
+        <h1 class="text-3xl md:text-5xl lg:text-7xl font-extrabold uppercase">
+          Events
+        </h1>
+      </div>
+    </section>
+    <div class="px-4 md:px-20 my-5 md:my-10 lg:px-36">
+      <EventsComponent client:only="react" />
+    </div>
+  </main>
+</Layout>
