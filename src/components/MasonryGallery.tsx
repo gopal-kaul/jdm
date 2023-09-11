@@ -9,7 +9,7 @@ export default function MasonryGallery() {
     <>
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry gutter="2rem">
-          {[...Array(34)].map((_, i) => (
+          {[...Array(42)].map((_, i) => (
             <button key={i} onClick={() => setModal((i + 1).toString())}>
               <img
                 className="hover:scale-110 transition-translate duration-500 ease-in-out"
