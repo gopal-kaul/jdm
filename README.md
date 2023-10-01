@@ -1,3 +1,3 @@
 # Joining Dots Montessori
 
-Webpage for JDM
+Webpage for Joining Dots Montessori!
